@@ -1,0 +1,27 @@
+{
+  "name": "tessereact-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "moment": "^2.18.1",
+    "moment-jalaali": "^0.7.2",
+    "react": "^15.6.1",
+    "react-addons-shallow-compare": "^15.6.0",
+    "react-dates": "^12.6.0",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.13",
+    "standard": "^10.0.3",
+    "tessereact": "https://github.com/tessereact/tessereact.git",
+    "tessereact-scripts": "https://github.com/tessereact/tessereact-scripts.git"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "tessereact": "tessereact-start",
+    "lint": "standard"
+  }
+}
