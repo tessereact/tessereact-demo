@@ -1,1 +1,1 @@
-import 'react-dates/lib/css/_datepicker.css'
+import 'bootstrap/dist/css/bootstrap.css'

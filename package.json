@@ -3,17 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "moment": "^2.18.1",
-    "moment-jalaali": "^0.7.2",
+    "bootstrap": "^3.3.7",
     "react": "^15.6.1",
-    "react-addons-shallow-compare": "^15.6.0",
-    "react-dates": "^12.6.0",
+    "react-bootstrap": "^0.31.3",
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
     "react-scripts": "1.0.13",
     "standard": "^10.0.3",
-    "tessereact": "https://github.com/tessereact/tessereact.git",
+    "tessereact": "https://github.com/tessereact/tessereact.git#frontend-css",
     "tessereact-scripts": "https://github.com/tessereact/tessereact-scripts.git"
   },
   "scripts": {
