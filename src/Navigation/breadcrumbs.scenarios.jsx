@@ -7,10 +7,10 @@ const scenario = (name, fn) => scenarioFn(name, fn, {css: true, screenshot: true
 context('Navigation: Breadcrumbs', () => {
   scenario('Breadcrumb', () =>
     <Breadcrumb>
-      <Breadcrumb.Item href="#">
+      <Breadcrumb.Item href='#'>
         Home
       </Breadcrumb.Item>
-      <Breadcrumb.Item href="#">
+      <Breadcrumb.Item href='#'>
         Library
       </Breadcrumb.Item>
       <Breadcrumb.Item active>

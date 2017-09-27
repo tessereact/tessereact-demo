@@ -6,7 +6,7 @@ const scenario = (name, fn) => scenarioFn(name, fn, {css: true, screenshot: true
 
 context('Forms: Supported controls', () => {
   scenario('Form controls', () => {
-    function FieldGroup({ id, label, help, ...props }) {
+    function FieldGroup ({ id, label, help, ...props }) {
       return (
         <FormGroup controlId={id}>
           <ControlLabel>{label}</ControlLabel>
@@ -18,27 +18,27 @@ context('Forms: Supported controls', () => {
 
     return <form>
       <FieldGroup
-        id="formControlsText"
-        type="text"
-        label="Text"
-        placeholder="Enter text"
+        id='formControlsText'
+        type='text'
+        label='Text'
+        placeholder='Enter text'
       />
       <FieldGroup
-        id="formControlsEmail"
-        type="email"
-        label="Email address"
-        placeholder="Enter email"
+        id='formControlsEmail'
+        type='email'
+        label='Email address'
+        placeholder='Enter email'
       />
       <FieldGroup
-        id="formControlsPassword"
-        label="Password"
-        type="password"
+        id='formControlsPassword'
+        label='Password'
+        type='password'
       />
       <FieldGroup
-        id="formControlsFile"
-        type="file"
-        label="File"
-        help="Example block-level help text here."
+        id='formControlsFile'
+        type='file'
+        label='File'
+        help='Example block-level help text here.'
       />
 
       <Checkbox checked readOnly>
@@ -62,37 +62,37 @@ context('Forms: Supported controls', () => {
         </Checkbox>
       </FormGroup>
       <FormGroup>
-        <Radio name="radioGroup" inline>
+        <Radio name='radioGroup' inline>
           1
         </Radio>
         {' '}
-        <Radio name="radioGroup" inline>
+        <Radio name='radioGroup' inline>
           2
         </Radio>
         {' '}
-        <Radio name="radioGroup" inline>
+        <Radio name='radioGroup' inline>
           3
         </Radio>
       </FormGroup>
 
-      <FormGroup controlId="formControlsSelect">
+      <FormGroup controlId='formControlsSelect'>
         <ControlLabel>Select</ControlLabel>
-        <FormControl componentClass="select" placeholder="select">
-          <option value="select">select</option>
-          <option value="other">...</option>
+        <FormControl componentClass='select' placeholder='select'>
+          <option value='select'>select</option>
+          <option value='other'>...</option>
         </FormControl>
       </FormGroup>
-      <FormGroup controlId="formControlsSelectMultiple">
+      <FormGroup controlId='formControlsSelectMultiple'>
         <ControlLabel>Multiple select</ControlLabel>
-        <FormControl componentClass="select" multiple>
-          <option value="select">select (multiple)</option>
-          <option value="other">...</option>
+        <FormControl componentClass='select' multiple>
+          <option value='select'>select (multiple)</option>
+          <option value='other'>...</option>
         </FormControl>
       </FormGroup>
 
-      <FormGroup controlId="formControlsTextarea">
+      <FormGroup controlId='formControlsTextarea'>
         <ControlLabel>Textarea</ControlLabel>
-        <FormControl componentClass="textarea" placeholder="textarea" />
+        <FormControl componentClass='textarea' placeholder='textarea' />
       </FormGroup>
 
       <FormGroup>
@@ -102,7 +102,7 @@ context('Forms: Supported controls', () => {
         </FormControl.Static>
       </FormGroup>
 
-      <Button type="submit">
+      <Button type='submit'>
         Submit
       </Button>
     </form>

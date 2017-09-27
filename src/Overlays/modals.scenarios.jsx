@@ -6,7 +6,7 @@ const scenario = (name, fn) => scenarioFn(name, fn, {css: true, screenshot: true
 
 context('Overlays: Modals', () => {
   scenario('Static markup', () =>
-    <div className="static-modal">
+    <div className='static-modal'>
       <Modal.Dialog>
         <Modal.Header>
           <Modal.Title>Modal title</Modal.Title>
@@ -18,7 +18,7 @@ context('Overlays: Modals', () => {
 
         <Modal.Footer>
           <Button>Close</Button>
-          <Button bsStyle="primary">Save changes</Button>
+          <Button bsStyle='primary'>Save changes</Button>
         </Modal.Footer>
 
       </Modal.Dialog>
@@ -39,14 +39,14 @@ context('Overlays: Modals', () => {
       this.setState({ showModal: true })
     }
 
-    render() {
+    render () {
       const popover = (
-        <Popover id="modal-popover" title="popover">
+        <Popover id='modal-popover' title='popover'>
           very popover. such engagement
         </Popover>
       )
       const tooltip = (
-        <Tooltip id="modal-tooltip">
+        <Tooltip id='modal-tooltip'>
           wow.
         </Tooltip>
       )
@@ -56,8 +56,8 @@ context('Overlays: Modals', () => {
           <p>Click to get the full Modal experience!</p>
 
           <Button
-            bsStyle="primary"
-            bsSize="large"
+            bsStyle='primary'
+            bsSize='large'
             onClick={this.open}
           >
             Launch demo modal
@@ -72,10 +72,10 @@ context('Overlays: Modals', () => {
               <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
 
               <h4>Popover in a modal</h4>
-              <p>there is a <OverlayTrigger overlay={popover}><a href="#">popover</a></OverlayTrigger> here</p>
+              <p>there is a <OverlayTrigger overlay={popover}><a href='#'>popover</a></OverlayTrigger> here</p>
 
               <h4>Tooltips in a modal</h4>
-              <p>there is a <OverlayTrigger overlay={tooltip}><a href="#">tooltip</a></OverlayTrigger> here</p>
+              <p>there is a <OverlayTrigger overlay={tooltip}><a href='#'>tooltip</a></OverlayTrigger> here</p>
 
               <hr />
 
@@ -105,14 +105,14 @@ context('Overlays: Modals', () => {
       this.state = { show: false }
     }
 
-    render() {
+    render () {
       const close = () => this.setState({ show: false})
 
       return (
-        <div className="modal-container" style={{height: 200}}>
+        <div className='modal-container' style={{height: 200}}>
           <Button
-            bsStyle="primary"
-            bsSize="large"
+            bsStyle='primary'
+            bsSize='large'
             onClick={() => this.setState({ show: true})}
           >
             Launch contained modal
@@ -122,10 +122,10 @@ context('Overlays: Modals', () => {
             show={this.state.show}
             onHide={close}
             container={this}
-            aria-labelledby="contained-modal-title"
+            aria-labelledby='contained-modal-title'
           >
             <Modal.Header closeButton>
-              <Modal.Title id="contained-modal-title">Contained Modal</Modal.Title>
+              <Modal.Title id='contained-modal-title'>Contained Modal</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               Elit est explicabo ipsum eaque dolorem blanditiis doloribus sed id ipsam, beatae, rem fuga id earum? Inventore et facilis obcaecati.
@@ -153,10 +153,10 @@ context('Overlays: Modals', () => {
       this.setState({show: false})
     }
 
-    render() {
+    render () {
       return (
         <ButtonToolbar>
-          <Button bsStyle="primary" onClick={this.showModal}>
+          <Button bsStyle='primary' onClick={this.showModal}>
             Launch demo modal
           </Button>
 
@@ -164,10 +164,10 @@ context('Overlays: Modals', () => {
             {...this.props}
             show={this.state.show}
             onHide={this.hideModal}
-            dialogClassName="custom-modal"
+            dialogClassName='custom-modal'
           >
             <Modal.Header closeButton>
-              <Modal.Title id="contained-modal-title-lg">Modal heading</Modal.Title>
+              <Modal.Title id='contained-modal-title-lg'>Modal heading</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <h4>Wrapped Text</h4>
@@ -198,11 +198,11 @@ context('Overlays: Modals', () => {
 
   scenario('Sizing modals using standard Bootstrap props', () => {
     class MySmallModal extends React.Component {
-      render() {
+      render () {
         return (
-          <Modal {...this.props} bsSize="small" aria-labelledby="contained-modal-title-sm">
+          <Modal {...this.props} bsSize='small' aria-labelledby='contained-modal-title-sm'>
             <Modal.Header closeButton>
-              <Modal.Title id="contained-modal-title-sm">Modal heading</Modal.Title>
+              <Modal.Title id='contained-modal-title-sm'>Modal heading</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <h4>Wrapped Text</h4>
@@ -225,11 +225,11 @@ context('Overlays: Modals', () => {
     }
 
     class MyLargeModal extends React.Component {
-      render() {
+      render () {
         return (
-          <Modal {...this.props} bsSize="large" aria-labelledby="contained-modal-title-lg">
+          <Modal {...this.props} bsSize='large' aria-labelledby='contained-modal-title-lg'>
             <Modal.Header closeButton>
-              <Modal.Title id="contained-modal-title-lg">Modal heading</Modal.Title>
+              <Modal.Title id='contained-modal-title-lg'>Modal heading</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <h4>Wrapped Text</h4>
@@ -257,16 +257,16 @@ context('Overlays: Modals', () => {
         this.state = { smShow: false, lgShow: false }
       }
 
-      render() {
+      render () {
         let smClose = () => this.setState({ smShow: false })
         let lgClose = () => this.setState({ lgShow: false })
 
         return (
           <ButtonToolbar>
-            <Button bsStyle="primary" onClick={()=>this.setState({ smShow: true })}>
+            <Button bsStyle='primary' onClick={() => this.setState({ smShow: true })}>
               Launch small demo modal
             </Button>
-            <Button bsStyle="primary" onClick={()=>this.setState({ lgShow: true })}>
+            <Button bsStyle='primary' onClick={() => this.setState({ lgShow: true })}>
               Launch large demo modal
             </Button>
 

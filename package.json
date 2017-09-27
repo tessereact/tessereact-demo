@@ -21,5 +21,8 @@
     "eject": "react-scripts eject",
     "tessereact": "tessereact-start",
     "lint": "standard"
+  },
+  "standard": {
+    "parser": "babel-eslint"
   }
 }

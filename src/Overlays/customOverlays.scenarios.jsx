@@ -16,30 +16,30 @@ context('Overlays: Custom Overlays', () => {
       this.setState({ show: !this.state.show })
     }
 
-    render() {
+    render () {
       const sharedProps = {
         show: this.state.show,
         container: this,
         target: () => ReactDOM.findDOMNode(this.refs.target)
-      };
+      }
 
       return (
         <div style={{ height: 100, paddingLeft: 150, position: 'relative' }}>
-          <Button ref="target" onClick={this.toggle}>
+          <Button ref='target' onClick={this.toggle}>
             Click me!
           </Button>
 
-          <Overlay {...sharedProps} placement="left">
-            <Tooltip id="overload-left">Tooltip overload!</Tooltip>
+          <Overlay {...sharedProps} placement='left'>
+            <Tooltip id='overload-left'>Tooltip overload!</Tooltip>
           </Overlay>
-          <Overlay {...sharedProps} placement="top">
-            <Tooltip id="overload-top">Tooltip overload!</Tooltip>
+          <Overlay {...sharedProps} placement='top'>
+            <Tooltip id='overload-top'>Tooltip overload!</Tooltip>
           </Overlay>
-          <Overlay {...sharedProps} placement="right">
-            <Tooltip id="overload-right">Tooltip overload!</Tooltip>
+          <Overlay {...sharedProps} placement='right'>
+            <Tooltip id='overload-right'>Tooltip overload!</Tooltip>
           </Overlay>
-          <Overlay {...sharedProps} placement="bottom">
-            <Tooltip id="overload-bottom">Tooltip overload!</Tooltip>
+          <Overlay {...sharedProps} placement='bottom'>
+            <Tooltip id='overload-bottom'>Tooltip overload!</Tooltip>
           </Overlay>
         </div>
       )
@@ -48,7 +48,7 @@ context('Overlays: Custom Overlays', () => {
 
   scenario('Use Overlay instead of Tooltip and Popover', () => {
     class CustomPopover extends React.Component {
-      render() {
+      render () {
         return (
           <div
             style={{
@@ -60,7 +60,7 @@ context('Overlays: Custom Overlays', () => {
               borderRadius: 3,
               marginLeft: -5,
               marginTop: 5,
-              padding: 10,
+              padding: 10
             }}
           >
             <strong>Holy guacamole!</strong> Check this info.
@@ -75,21 +75,21 @@ context('Overlays: Custom Overlays', () => {
         this.state = { show: true }
       }
 
-      toggle() {
+      toggle () {
         this.setState({ show: !this.state.show })
       }
 
-      render() {
+      render () {
         return (
           <div style={{ height: 100, position: 'relative' }}>
-            <Button ref="target" onClick={this.toggle}>
+            <Button ref='target' onClick={this.toggle}>
               I am an Overlay target
             </Button>
 
             <Overlay
               show={this.state.show}
               onHide={() => this.setState({ show: false })}
-              placement="right"
+              placement='right'
               container={this}
               target={() => ReactDOM.findDOMNode(this.refs.target)}
             >

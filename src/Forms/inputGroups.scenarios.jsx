@@ -10,28 +10,28 @@ context('Forms: Input groups', () => {
       <FormGroup>
         <InputGroup>
           <InputGroup.Addon>@</InputGroup.Addon>
-          <FormControl type="text" />
+          <FormControl type='text' />
         </InputGroup>
       </FormGroup>
       <FormGroup>
         <InputGroup>
-          <FormControl type="text" />
+          <FormControl type='text' />
           <InputGroup.Addon>.00</InputGroup.Addon>
         </InputGroup>
       </FormGroup>
       <FormGroup>
         <InputGroup>
           <InputGroup.Addon>$</InputGroup.Addon>
-          <FormControl type="text" />
+          <FormControl type='text' />
           <InputGroup.Addon>.00</InputGroup.Addon>
         </InputGroup>
       </FormGroup>
 
       <FormGroup>
         <InputGroup>
-          <FormControl type="text" />
+          <FormControl type='text' />
           <InputGroup.Addon>
-            <Glyphicon glyph="music" />
+            <Glyphicon glyph='music' />
           </InputGroup.Addon>
         </InputGroup>
       </FormGroup>
@@ -41,18 +41,18 @@ context('Forms: Input groups', () => {
           <InputGroup.Button>
             <Button>Before</Button>
           </InputGroup.Button>
-          <FormControl type="text" />
+          <FormControl type='text' />
         </InputGroup>
       </FormGroup>
       <FormGroup>
         <InputGroup>
-          <FormControl type="text" />
+          <FormControl type='text' />
           <DropdownButton
             componentClass={InputGroup.Button}
-            id="input-dropdown-addon"
-            title="Action"
+            id='input-dropdown-addon'
+            title='Action'
           >
-            <MenuItem key="1">Item</MenuItem>
+            <MenuItem key='1'>Item</MenuItem>
           </DropdownButton>
         </InputGroup>
       </FormGroup>
@@ -60,17 +60,17 @@ context('Forms: Input groups', () => {
       <FormGroup>
         <InputGroup>
           <InputGroup.Addon>
-            <input type="radio" aria-label="..." />
+            <input type='radio' aria-label='...' />
           </InputGroup.Addon>
-          <FormControl type="text" />
+          <FormControl type='text' />
         </InputGroup>
       </FormGroup>
       <FormGroup>
         <InputGroup>
           <InputGroup.Addon>
-            <input type="checkbox" aria-label="..." />
+            <input type='checkbox' aria-label='...' />
           </InputGroup.Addon>
-          <FormControl type="text" />
+          <FormControl type='text' />
         </InputGroup>
       </FormGroup>
     </form>
@@ -78,14 +78,14 @@ context('Forms: Input groups', () => {
 
   scenario('Input sizes', () =>
     <form>
-      <FormGroup bsSize="large">
-        <FormControl type="text" placeholder="Large text" />
+      <FormGroup bsSize='large'>
+        <FormControl type='text' placeholder='Large text' />
       </FormGroup>
       <FormGroup>
-        <FormControl type="text" placeholder="Normal text" />
+        <FormControl type='text' placeholder='Normal text' />
       </FormGroup>
-      <FormGroup bsSize="small">
-        <FormControl type="text" placeholder="Small text" />
+      <FormGroup bsSize='small'>
+        <FormControl type='text' placeholder='Small text' />
       </FormGroup>
     </form>
   )

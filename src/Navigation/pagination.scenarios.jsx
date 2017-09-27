@@ -19,25 +19,25 @@ context('Navigation: Pagination', () => {
       })
     }
 
-    render() {
+    render () {
       return (
         <div>
           <Pagination
-            bsSize="large"
+            bsSize='large'
             items={10}
             activePage={this.state.activePage}
             onSelect={this.handleSelect} />
           <br />
 
           <Pagination
-            bsSize="medium"
+            bsSize='medium'
             items={10}
             activePage={this.state.activePage}
             onSelect={this.handleSelect} />
           <br />
 
           <Pagination
-            bsSize="small"
+            bsSize='small'
             items={10}
             activePage={this.state.activePage}
             onSelect={this.handleSelect} />
@@ -60,7 +60,7 @@ context('Navigation: Pagination', () => {
       })
     }
 
-    render() {
+    render () {
       return (
         <Pagination
           prev

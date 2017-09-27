@@ -6,16 +6,16 @@ const scenario = (name, fn) => scenarioFn(name, fn, {css: true, screenshot: true
 
 context('Transitions', () => {
   scenario('Collapse', class CollapseExample extends React.Component {
-    constructor(...args) {
+    constructor (...args) {
       super(...args)
 
-      this.state = {};
+      this.state = {}
     }
 
-    render() {
+    render () {
       return (
         <div>
-          <Button onClick={ ()=> this.setState({ open: !this.state.open })}>
+          <Button onClick={() => this.setState({ open: !this.state.open })}>
             click
           </Button>
           <Collapse in={this.state.open}>
@@ -32,15 +32,15 @@ context('Transitions', () => {
   })
 
   scenario('Fade', class FadeExample extends React.Component {
-    constructor(...args) {
+    constructor (...args) {
       super(...args)
-      this.state = {};
+      this.state = {}
     }
 
-    render() {
+    render () {
       return (
         <div>
-          <Button onClick={()=> this.setState({ open: !this.state.open })}>
+          <Button onClick={() => this.setState({ open: !this.state.open })}>
             click
           </Button>
           <Fade in={this.state.open}>

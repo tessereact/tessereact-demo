@@ -1,6 +1,7 @@
 import React from 'react'
 import { context, scenario as scenarioFn } from 'tessereact'
 import { Grid, Row, Col, Image } from 'react-bootstrap'
+import thumbnailImg from '../assets/thumbnail.png'
 
 const scenario = (name, fn) => scenarioFn(name, fn, {css: true, screenshot: true})
 
@@ -9,19 +10,19 @@ context('Media content: Images', () => {
     <Grid>
       <Row>
         <Col xs={6} md={4}>
-          <Image src="/assets/thumbnail.png" rounded />
+          <Image src={thumbnailImg} rounded />
         </Col>
         <Col xs={6} md={4}>
-          <Image src="/assets/thumbnail.png" circle />
+          <Image src={thumbnailImg} circle />
         </Col>
         <Col xs={6} md={4}>
-          <Image src="/assets/thumbnail.png" thumbnail />
+          <Image src={thumbnailImg} thumbnail />
         </Col>
       </Row>
     </Grid>
   )
 
   scenario('Responsive', () =>
-    <Image src="/assets/thumbnail.png" responsive />
+    <Image src={thumbnailImg} responsive />
   )
 })
