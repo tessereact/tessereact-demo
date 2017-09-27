@@ -11,7 +11,7 @@
   "devDependencies": {
     "react-scripts": "1.0.13",
     "standard": "^10.0.3",
-    "tessereact": "https://github.com/tessereact/tessereact.git#frontend-css",
+    "tessereact": "https://github.com/tessereact/tessereact.git",
     "tessereact-scripts": "https://github.com/tessereact/tessereact-scripts.git"
   },
   "scripts": {
