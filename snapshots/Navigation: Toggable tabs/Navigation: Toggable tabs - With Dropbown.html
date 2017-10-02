@@ -1,0 +1,42 @@
+<div id="tabs-with-dropdown" class="clearfix row">
+  <div class="col-sm-12">
+    <ul role="tablist" class="nav nav-tabs">
+      <li role="presentation" class="active">
+        <a id="tabs-with-dropdown-tab-first" role="tab" aria-controls="tabs-with-dropdown-pane-first" aria-selected="true" href="#">Tab 1</a>
+      </li>
+      <li role="presentation" class="">
+        <a id="tabs-with-dropdown-tab-second" role="tab" aria-controls="tabs-with-dropdown-pane-second" tabindex="-1" aria-selected="false" href="#">Tab 2</a>
+      </li>
+      <li class="dropdown">
+        <a aria-controls="tabs-with-dropdown-pane-3" tabindex="-1" id="tabs-with-dropdown-tab-3" role="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" href="#">Dropdown
+          <span class="caret"></span>
+        </a>
+        <ul role="menu" class="dropdown-menu" aria-labelledby="tabs-with-dropdown-tab-3">
+          <li role="presentation" class="">
+            <a role="menuitem" tabindex="-1" href="#">Action</a>
+          </li>
+          <li role="presentation" class="">
+            <a role="menuitem" tabindex="-1" href="#">Another action</a>
+          </li>
+          <li role="presentation" class="">
+            <a role="menuitem" tabindex="-1" href="#">Something else here</a>
+          </li>
+          <li role="separator" class="divider"></li>
+          <li role="presentation" class="">
+            <a role="menuitem" tabindex="-1" href="#">Separated link</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="col-sm-12">
+    <div class="tab-content">
+      <div id="tabs-with-dropdown-pane-first" aria-labelledby="tabs-with-dropdown-tab-first" role="tabpanel" aria-hidden="false" class="tab-pane active fade in">Tab 1 content</div>
+      <div id="tabs-with-dropdown-pane-second" aria-labelledby="tabs-with-dropdown-tab-second" role="tabpanel" aria-hidden="true" class="tab-pane fade">Tab 2 content</div>
+      <div id="tabs-with-dropdown-pane-3.1" aria-labelledby="tabs-with-dropdown-tab-3.1" role="tabpanel" aria-hidden="true" class="tab-pane fade">Tab 3.1 content</div>
+      <div id="tabs-with-dropdown-pane-3.2" aria-labelledby="tabs-with-dropdown-tab-3.2" role="tabpanel" aria-hidden="true" class="tab-pane fade">Tab 3.2 content</div>
+      <div id="tabs-with-dropdown-pane-3.3" aria-labelledby="tabs-with-dropdown-tab-3.3" role="tabpanel" aria-hidden="true" class="tab-pane fade">Tab 3.3 content</div>
+      <div id="tabs-with-dropdown-pane-3.4" aria-labelledby="tabs-with-dropdown-tab-3.4" role="tabpanel" aria-hidden="true" class="tab-pane fade">Tab 3.4 content</div>
+    </div>
+  </div>
+</div>
