@@ -22,7 +22,7 @@ context('Alerts', () => {
     render () {
       if (this.state.alertVisible) {
         return (
-          <Alert bsStyle='danger' onDismiss={this.handleAlertDismiss}>
+          <Alert bsStyle='danger'>
             <h4>Oh snap! You got an error!</h4>
             <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
             <p>

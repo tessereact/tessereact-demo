@@ -69,7 +69,7 @@ context('Navigation: Pagination', () => {
           last
           ellipsis
           boundaryLinks
-          items={20}
+          items={30}
           maxButtons={5}
           activePage={this.state.activePage}
           onSelect={this.handleSelect} />
