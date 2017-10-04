@@ -18,7 +18,7 @@ context('Overlays: Modals', () => {
 
         <Modal.Footer>
           <Button>Close</Button>
-          <Button bsStyle='primary'>Save changes</Button>
+          <Button bsStyle='primary' disabled>Save changes</Button>
         </Modal.Footer>
 
       </Modal.Dialog>
