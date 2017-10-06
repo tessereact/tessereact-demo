@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "firebase": "^4.5.0",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.3",
     "react-dom": "^15.6.1"
@@ -22,7 +23,8 @@
     "tessereact": "tessereact-start",
     "ci": "tessereact-ci",
     "lint": "standard",
-    "build-tessereact": "env NODE_ENV=production webpack --config ./webpack.config.demoMode.js"
+    "build-tessereact": "env NODE_ENV=production webpack --config ./webpack.config.demoMode.js",
+    "deploy": "yarn build && firebase deploy"
   },
   "standard": {
     "parser": "babel-eslint"
