@@ -1,3 +1,5 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
 import snapshots from './demoModeSnapshots.json'
 import defaultScreenshotURL from './assets/placeholder.png'
 
@@ -14,12 +16,30 @@ import paginationXGA from './demoModeScreenshots/paginationXGA.gif'
 import modalIPhone from './demoModeScreenshots/modalIPhone.gif'
 import modalXGA from './demoModeScreenshots/modalXGA.gif'
 
+import forkMeImg from './assets/forkme.png'
+
 const description = `
   <div style="padding: 20px;">
     <p>This demo works properly only in Google Chrome.</p>
     <p>Reload to reset accepted scenarios.</p>
   </div>
 `
+
+// Not in iframe
+if (!/\/scenarios\/[^/]+\/view/.test(window.location.href)) {
+  const wrapperElement = document.createElement('div')
+  document.body.appendChild(wrapperElement)
+  ReactDOM.render(
+    <a href='https://github.com/tessereact/tessereact'>
+      <img
+        style={{position: 'absolute', bottom: 0, right: 0, border: 0, zIndex: 999999}}
+        src={forkMeImg}
+        alt='Fork me on GitHub'
+      />
+    </a>,
+    wrapperElement
+  )
+}
 
 window.__tessereactDemoMode = {
   description,
