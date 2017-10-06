@@ -11,8 +11,8 @@
   "devDependencies": {
     "react-scripts": "1.0.13",
     "standard": "^10.0.3",
-    "tessereact": "https://github.com/tessereact/tessereact.git",
-    "tessereact-scripts": "https://github.com/tessereact/tessereact-scripts.git"
+    "tessereact": "https://github.com/tessereact/tessereact.git#ci",
+    "tessereact-scripts": "https://github.com/tessereact/tessereact-scripts.git#ci"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -20,6 +20,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "tessereact": "tessereact-start",
+    "ci": "tessereact-ci",
     "lint": "standard"
   },
   "standard": {

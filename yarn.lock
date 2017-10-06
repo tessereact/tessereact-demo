@@ -6844,15 +6844,15 @@ tar@^2.2.1:
     fstream "^1.0.2"
     inherits "2"
 
-"tessereact-scripts@https://github.com/tessereact/tessereact-scripts.git":
+"tessereact-scripts@https://github.com/tessereact/tessereact-scripts.git#ci":
   version "0.0.1"
-  resolved "https://github.com/tessereact/tessereact-scripts.git#ecb29ce531ed533b4aa80fa51891d02a4a08b960"
+  resolved "https://github.com/tessereact/tessereact-scripts.git#25a285fe7b85a1d567e3e7d00d92431b2b036b41"
   dependencies:
     virtual-module-webpack-plugin "^0.3.0"
 
-"tessereact@https://github.com/tessereact/tessereact.git":
+"tessereact@https://github.com/tessereact/tessereact.git#ci":
   version "0.1.3"
-  resolved "https://github.com/tessereact/tessereact.git#349252984ff7d28c10682dc587c9a2b826c16aea"
+  resolved "https://github.com/tessereact/tessereact.git#9c57b6678f3f7e069ba84a328642ff288a85850f"
   dependencies:
     body-parser "^1.15.2"
     chromedriver "^2.31.0"
