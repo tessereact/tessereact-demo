@@ -4,7 +4,7 @@ import snapshots from './demoModeSnapshots.json'
 import defaultScreenshotURL from './assets/placeholder.png'
 
 import closeableAlertsIPhone from './demoModeScreenshots/closeableAlertsIPhone.gif'
-import closeableAlertsIPhoneXGA from './demoModeScreenshots/closeableAlertsIPhoneXGA.gif'
+import closeableAlertsXGA from './demoModeScreenshots/closeableAlertsXGA.gif'
 import disabledButtonIPhone from './demoModeScreenshots/disabledButtonIPhone.gif'
 import disabledButtonXGA from './demoModeScreenshots/disabledButtonXGA.gif'
 import signInIPhone from './demoModeScreenshots/signInIPhone.gif'
@@ -47,7 +47,7 @@ window.__tessereactDemoMode = {
   defaultScreenshotURL,
   screenshots: {
     'Alerts/Closeable alerts/0': closeableAlertsIPhone,
-    'Alerts/Closeable alerts/1': closeableAlertsIPhoneXGA,
+    'Alerts/Closeable alerts/1': closeableAlertsXGA,
     'Button/Disabled state/0': disabledButtonIPhone,
     'Button/Disabled state/1': disabledButtonXGA,
     'Forms: Form layouts/Horizontal/0': signInIPhone,
