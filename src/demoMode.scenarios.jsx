@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import snapshots from './demoModeSnapshots.json'
+import css from './demoModeCSS.json'
 import defaultScreenshotURL from './assets/placeholder.png'
 
 import closeableAlertsIPhone from './demoModeScreenshots/closeableAlertsIPhone.gif'
@@ -20,7 +21,7 @@ import forkMeImg from './assets/forkme.png'
 
 const description = `
   <div style="padding: 20px;">
-    <p>This demo works properly only in Google Chrome.</p>
+    <p>This is a demo of Tessereact with pregenerated CSS and screenshots.</p>
     <p>Reload to reset accepted scenarios.</p>
   </div>
 `
@@ -44,6 +45,7 @@ if (!/\/scenarios\/[^/]+\/view/.test(window.location.href)) {
 window.__tessereactDemoMode = {
   description,
   snapshots,
+  css,
   defaultScreenshotURL,
   screenshots: {
     'Alerts/Closeable alerts/0': closeableAlertsIPhone,
