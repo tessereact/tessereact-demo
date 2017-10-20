@@ -1,3 +1,10 @@
+.dropdown-menu.open {
+  position: static;
+  display: block;
+  margin-bottom: 5px;
+  clear: left;
+}
+
 body {
   background-color: rgb(249, 249, 249);
 }

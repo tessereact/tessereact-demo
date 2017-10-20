@@ -1,6 +1,7 @@
 import React from 'react'
 import { context, scenario as scenarioFn } from 'tessereact'
 import { Clearfix, MenuItem } from 'react-bootstrap'
+import './menuItems.css'
 
 const scenario = (name, fn) => scenarioFn(name, fn, {css: true, screenshot: true})
 
