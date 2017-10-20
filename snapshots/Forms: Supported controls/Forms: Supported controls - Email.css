@@ -1,0 +1,122 @@
+body {
+  background-color: rgb(249, 249, 249);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+html {
+  font-family: sans-serif;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0px;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0px;
+  font-style: inherit;
+  font-variant: inherit;
+  font-weight: inherit;
+  font-stretch: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+input {
+  line-height: normal;
+}
+
+@media print {
+  *, ::before, ::after {
+    color: rgb(0, 0, 0) !important;
+    text-shadow: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+}
+
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: url("/static/media/glyphicons-halflings-regular.f4769f9b.eot?#iefix") format("embedded-opentype"), url("/static/media/glyphicons-halflings-regular.448c34a5.woff2") format("woff2"), url("/static/media/glyphicons-halflings-regular.fa277232.woff") format("woff"), url("/static/media/glyphicons-halflings-regular.e18bbf61.ttf") format("truetype"), url("/static/media/glyphicons-halflings-regular.89889688.svg#glyphicons_halflingsregular") format("svg");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: rgb(51, 51, 51);
+  background-color: rgb(255, 255, 255);
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: rgb(85, 85, 85);
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: rgb(102, 175, 233);
+  outline: 0px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(102, 175, 233, 0.6) 0px 0px 8px;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: rgb(153, 153, 153);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+@keyframes progress-bar-stripes {
+  0% {
+    background-position: 40px 0px;
+  }
+
+  100% {
+    background-position: 0px 0px;
+  }
+}

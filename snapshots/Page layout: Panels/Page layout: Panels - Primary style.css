@@ -113,16 +113,6 @@ h3, .h3 {
   color: inherit;
 }
 
-.panel-default {
-  border-color: rgb(221, 221, 221);
-}
-
-.panel-default > .panel-heading {
-  color: rgb(51, 51, 51);
-  background-color: rgb(245, 245, 245);
-  border-color: rgb(221, 221, 221);
-}
-
 .panel-primary {
   border-color: rgb(51, 122, 183);
 }
@@ -131,46 +121,6 @@ h3, .h3 {
   color: rgb(255, 255, 255);
   background-color: rgb(51, 122, 183);
   border-color: rgb(51, 122, 183);
-}
-
-.panel-success {
-  border-color: rgb(214, 233, 198);
-}
-
-.panel-success > .panel-heading {
-  color: rgb(60, 118, 61);
-  background-color: rgb(223, 240, 216);
-  border-color: rgb(214, 233, 198);
-}
-
-.panel-info {
-  border-color: rgb(188, 232, 241);
-}
-
-.panel-info > .panel-heading {
-  color: rgb(49, 112, 143);
-  background-color: rgb(217, 237, 247);
-  border-color: rgb(188, 232, 241);
-}
-
-.panel-warning {
-  border-color: rgb(250, 235, 204);
-}
-
-.panel-warning > .panel-heading {
-  color: rgb(138, 109, 59);
-  background-color: rgb(252, 248, 227);
-  border-color: rgb(250, 235, 204);
-}
-
-.panel-danger {
-  border-color: rgb(235, 204, 209);
-}
-
-.panel-danger > .panel-heading {
-  color: rgb(169, 68, 66);
-  background-color: rgb(242, 222, 222);
-  border-color: rgb(235, 204, 209);
 }
 
 .clearfix::before, .clearfix::after, .dl-horizontal dd::before, .dl-horizontal dd::after, .container::before, .container::after, .container-fluid::before, .container-fluid::after, .row::before, .row::after, .form-horizontal .form-group::before, .form-horizontal .form-group::after, .btn-toolbar::before, .btn-toolbar::after, .btn-group-vertical > .btn-group::before, .btn-group-vertical > .btn-group::after, .nav::before, .nav::after, .navbar::before, .navbar::after, .navbar-header::before, .navbar-header::after, .navbar-collapse::before, .navbar-collapse::after, .pager::before, .pager::after, .panel-body::before, .panel-body::after, .modal-header::before, .modal-header::after, .modal-footer::before, .modal-footer::after {

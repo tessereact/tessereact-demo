@@ -59,37 +59,35 @@ context('Page layout: Panels', () => {
     </Panel>
   )
 
-  scenario('Contextual alternatives', () => {
-    const title = (
-      <h3>Panel title</h3>
-    )
+  scenario('Primary style', () =>
+    <Panel header={<h3>Panel title</h3>} bsStyle='primary'>
+      Panel content
+    </Panel>
+  )
 
-    return <div>
-      <Panel header={title}>
-        Panel content
-      </Panel>
+  scenario('Success style', () =>
+    <Panel header={<h3>Panel title</h3>} bsStyle='success'>
+      Panel content
+    </Panel>
+  )
 
-      <Panel header={title} bsStyle='primary'>
-        Panel content
-      </Panel>
+  scenario('Info style', () =>
+    <Panel header={<h3>Panel title</h3>} bsStyle='info'>
+      Panel content
+    </Panel>
+  )
 
-      <Panel header={title} bsStyle='success'>
-        Panel content
-      </Panel>
+  scenario('Danger style', () =>
+    <Panel header={<h3>Panel title</h3>} bsStyle='danger'>
+      Panel content
+    </Panel>
+  )
 
-      <Panel header={title} bsStyle='info'>
-        Panel content
-      </Panel>
-
-      <Panel header={title} bsStyle='warning'>
-        Panel content
-      </Panel>
-
-      <Panel header={title} bsStyle='danger'>
-        Panel content
-      </Panel>
-    </div>
-  })
+  scenario('Warning style', () =>
+    <Panel header={<h3>Panel title</h3>} bsStyle='warning'>
+      Panel content
+    </Panel>
+  )
 
   scenario('With list groups', () =>
     <Panel collapsible defaultExpanded header='Panel heading'>
