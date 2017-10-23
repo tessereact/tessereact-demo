@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import snapshots from './demoModeSnapshots.json'
 import css from './demoModeCSS.json'
 import defaultScreenshotURL from './assets/placeholder.png'
@@ -19,31 +18,27 @@ import modalXGA from './demoModeScreenshots/modalXGA.gif'
 
 import forkMeImg from './assets/forkme.png'
 
-const description = `
-  <div style="padding: 20px;">
-    <p>This is a demo of Tessereact with pregenerated CSS and screenshots.</p>
-    <p>Reload to reset accepted scenarios.</p>
-  </div>
-`
+const title = 'About Tessereact'
+const link = 'About Tessereact'
 
-// Not in iframe
-if (!/\/scenarios\/[^/]+\/view/.test(window.location.href)) {
-  const wrapperElement = document.createElement('div')
-  document.body.appendChild(wrapperElement)
-  ReactDOM.render(
-    <a href='https://github.com/tessereact/tessereact'>
-      <img
-        style={{position: 'absolute', bottom: 0, right: 0, border: 0, zIndex: 999999}}
-        src={forkMeImg}
-        alt='Fork me on GitHub'
-      />
-    </a>,
-    wrapperElement
-  )
-}
+const description = <div style={{padding: 20}}>
+  <p>This is a demo of Tessereact with pregenerated CSS and screenshots.</p>
+  <p>Reload to reset accepted scenarios.</p>
+</div>
+
+const ribbon = <a href='https://github.com/tessereact/tessereact'>
+  <img
+    style={{position: 'absolute', bottom: 0, right: 0, border: 0, zIndex: 999999}}
+    src={forkMeImg}
+    alt='Fork me on GitHub'
+  />
+</a>
 
 window.__tessereactDemoMode = {
+  title,
   description,
+  link,
+  ribbon,
   snapshots,
   css,
   defaultScreenshotURL,
