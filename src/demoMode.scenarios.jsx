@@ -1,7 +1,9 @@
 import React from 'react'
+import Markdown from 'react-markdown'
 import snapshots from './demoModeSnapshots.json'
 import css from './demoModeCSS.json'
 import defaultScreenshotURL from './assets/placeholder.png'
+import descriptionText from './demoModeDescription'
 
 import closeableAlertsIPhone from './demoModeScreenshots/closeableAlertsIPhone.gif'
 import closeableAlertsXGA from './demoModeScreenshots/closeableAlertsXGA.gif'
@@ -22,8 +24,7 @@ const title = 'About Tessereact'
 const link = 'About Tessereact'
 
 const description = <div style={{padding: 20}}>
-  <p>This is a demo of Tessereact with pregenerated CSS and screenshots.</p>
-  <p>Reload to reset accepted scenarios.</p>
+  <Markdown source={descriptionText} />
 </div>
 
 const ribbon = <a href='https://github.com/tessereact/tessereact'>
