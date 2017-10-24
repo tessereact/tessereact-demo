@@ -11,7 +11,7 @@
   "devDependencies": {
     "react-scripts": "1.0.13",
     "standard": "^10.0.3",
-    "tessereact": "0.3.1",
+    "tessereact": "0.3.2",
     "tessereact-scripts": "0.3.0"
   },
   "scripts": {

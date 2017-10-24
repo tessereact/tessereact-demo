@@ -6667,9 +6667,9 @@ tessereact-scripts@0.3.0:
   dependencies:
     virtual-module-webpack-plugin "^0.3.0"
 
-tessereact@0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/tessereact/-/tessereact-0.3.1.tgz#1c13f41c8ea5878aaf1144b1de514f76f0205157"
+tessereact@0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/tessereact/-/tessereact-0.3.2.tgz#9ae2d11f66b677583925b08eb4caff4798ad674d"
   dependencies:
     body-parser "^1.15.2"
     cors "^2.8.1"
