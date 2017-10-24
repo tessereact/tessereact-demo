@@ -20,10 +20,12 @@ import modalXGA from './demoModeScreenshots/modalXGA.gif'
 
 import forkMeImg from './assets/forkme.png'
 
+import './demoMode.css'
+
 const title = 'About Tessereact'
 const link = 'About Tessereact'
 
-const description = <div style={{padding: 20}}>
+const description = <div className='demo-mode-page'>
   <Markdown source={descriptionText} />
 </div>
 
