@@ -47,6 +47,21 @@ input {
   src: url("/static/media/glyphicons-halflings-regular.f4769f9b.eot?#iefix") format("embedded-opentype"), url("/static/media/glyphicons-halflings-regular.448c34a5.woff2") format("woff2"), url("/static/media/glyphicons-halflings-regular.fa277232.woff") format("woff"), url("/static/media/glyphicons-halflings-regular.e18bbf61.ttf") format("truetype"), url("/static/media/glyphicons-halflings-regular.89889688.svg#glyphicons_halflingsregular") format("svg");
 }
 
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.glyphicon-music::before {
+  content: "";
+}
+
 * {
   box-sizing: border-box;
 }

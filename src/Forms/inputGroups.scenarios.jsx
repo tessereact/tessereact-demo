@@ -26,7 +26,11 @@ context('Forms: Input groups', () => {
           <InputGroup.Addon>.00</InputGroup.Addon>
         </InputGroup>
       </FormGroup>
+    </form>
+  )
 
+  scenario('Input add-ons: glyphicons', () =>
+    <form>
       <FormGroup>
         <InputGroup>
           <FormControl type='text' />
@@ -35,7 +39,11 @@ context('Forms: Input groups', () => {
           </InputGroup.Addon>
         </InputGroup>
       </FormGroup>
+    </form>
+  )
 
+  scenario('Input add-ons: text', () =>
+    <form>
       <FormGroup>
         <InputGroup>
           <InputGroup.Button>
@@ -56,7 +64,11 @@ context('Forms: Input groups', () => {
           </DropdownButton>
         </InputGroup>
       </FormGroup>
+    </form>
+  )
 
+  scenario('Input add-ons: radios and checkboxes', () =>
+    <form>
       <FormGroup>
         <InputGroup>
           <InputGroup.Addon>

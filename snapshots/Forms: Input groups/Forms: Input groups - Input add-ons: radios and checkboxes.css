@@ -33,6 +33,11 @@ input {
   line-height: normal;
 }
 
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0px;
+}
+
 @media print {
   *, ::before, ::after {
     color: rgb(0, 0, 0) !important;
@@ -72,6 +77,16 @@ input, button, select, textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin: 4px 0px 0px;
+  line-height: normal;
+}
+
+input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus {
+  outline: -webkit-focus-ring-color auto 5px;
+  outline-offset: -2px;
 }
 
 .form-control {
@@ -146,6 +161,10 @@ input, button, select, textarea {
   background-color: rgb(238, 238, 238);
   border: 1px solid rgb(204, 204, 204);
   border-radius: 4px;
+}
+
+.input-group-addon input[type="radio"], .input-group-addon input[type="checkbox"] {
+  margin-top: 0px;
 }
 
 .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
